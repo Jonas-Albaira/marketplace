@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "master-anagram-232201",
+  "private_key_id": "66cf20994b8e31c7a1b898b026d9f2ae72cdfca6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCqQMJZgLxF6AJF\nB2/OGHUrnJ/WbBI0Mf5MHZaEyWlFmqnaWv68enNjwAEWibjUGvx6fxZTv0THOm2O\n3aJfXC8PGoSvWdJHvH6gFNiKFGVcnM4Eb9j+TV310GEyLrna/ifqHqR5NE9pMaDK\nxIvUfKPVLusc8+Ir3LDEttnYGoYU6WT4/Ks9ejDG8dUmPcDWpDOmLhszqp9G/j/Y\nNNJRrL3ntsL8bwvR6v9iiGduhiT26fzu9rVcIZlH6XWnBjzgzjq0YRSBcZDtVWgu\nxgx8MszMBY2COqjFs9c6jXX5P4h8K2jrcBFZFdqdBvsaf0yAJ2AJ0lrjByR7So2e\nF4An+bF9AgMBAAECggEADuBauxRfHyKfNCXqtJD5iAaHBubpjksCA+ef89lfi/fw\nOIaz9IcklwY7chs1nb7/6bo6GrY/TcNCuHWQTxHQgNrZ1jKch60mSVmY9DPFCZsf\n+05EoS/kcmqzW32uur5zgWcNCxQxjikKej1DVJ1ReXrAi4aZ8Cg3//BUR6hFqAT6\nIN3WrkJlGCp2TvUS4CfEDP7Eopu3n3f8I2Q03ksRNM5ixC1yuj06s7UYjP+bjqwm\nE4EysTvsRfbtm3+/Q/oBknyI7u7pl0D++Er0qwakUuzkTUnTJBQe4mbfy8zbTbVs\nCe3/rD8CNBWrHAEs3TmxgkHwPnioB//Tq17e3siP9wKBgQDn1cGl3XsRY+bqf2v/\nGLEzOAMPtJMhGiRcVYpw1IEIQFyg4po8q/+DqFi8r667AzLKwQej2adWLMxE4Gx4\n8EMBBvECf6vV+5Gnz5JUUWMgYTg2fH8tKTZy3TkMG0RmFdNS0Vgs39q6Wr3PH6TY\nkykwHW3rxH+bvyxsllxzZ7zhKwKBgQC7/8JRH05M+5JZkSSaAwibaLMvvCRsqkO+\nenJmNI0e3wy5Zner9RUJ6aBsIfdrdZ4VVpSOMYM/VVrbanimYUa8ZMQS1dtu5QrY\nB6yOqPQMGqMsaTdoH91OnWbpjrxMMg1aDy8Ld50NqF/ImBxgGpEH5IyOZOBW4eY3\n9GqjWnLT9wKBgQCimJy0Q93omHR/ytZnl13QWlxrS25VLQyLZcMu1xuYOeu9OrCK\nFOej4xI5Y83cg6W/5hoBpMlj+w9Yzz3EpF2Z/tBRvFE8RrAlTcOHN32aXBUcwbxA\nZEM31EgKYaVbI7uOvhxlfKrfQH0XI05uRugAQuOxE6OcDDyP+/TjS8KA+QKBgQC7\n0AaQhHX08l6CnD20ntM6bp6UUaER7gc/g5RGBrn03WAY2AU2BOG/xWY+oLBM6nPD\nXXuLkmtMGjlqejOOBCBmlURMjNlrL+Zla0U4QBGPBg19kJ+Jpkuw/g6RxcbXWCl+\njyywiA6eVldaTpwKZn/9IpZIqv5zzbnwrHzcNMACgQKBgBkPDKnuy6+u8T2PaBQ8\nOTFiuWKIlHV/0Z90sBwOQrrJDu8qSMP/gj9ll58NWrAnTawNSroyptSMwDWHRb2v\nniAJv1ENiUjcLknDgsXVJYrVOk6gCjIDRmMx/OTohLABgZqEOoeVo4PFcECo2d4+\nvLzlZv3Y+TNulrhPSp0eKeOP\n-----END PRIVATE KEY-----\n",
+  "client_email": "visionapi@master-anagram-232201.iam.gserviceaccount.com",
+  "client_id": "115070035919536522812",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/visionapi%40master-anagram-232201.iam.gserviceaccount.com"
+}
