@@ -11,8 +11,8 @@ var S3_BUCKET = "jonas-personal-portfolio";
 //AWS.config.region = 'us-east-1';
 AWS.config.update({
   region: 'us-east-1',
-  accessKeyId: 'AKIAIQM3YRQSSP35TQMQ',
-  secretAccessKey: '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'//,
+  accessKeyId: 'AKIAJYRPILPMG7CR2IVA',
+  secretAccessKey: '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'//,
   //endpoint: new AWS.Endpoint('http://localhost:8000'),
 });
 var s3 = new AWS.S3();
