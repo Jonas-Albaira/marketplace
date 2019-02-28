@@ -13,14 +13,17 @@
         font-weight: 400;
         font-style: normal;
     }
-    
+    h1,h2,h3,h4,h5 {
+        color:#031b4e;
+    }
     body * {
         font-family: "source-sans-pro";
         font-weight: 400;
         font-style: normal;
     }
     body {
-        background-color:#f3f3f3;
+        background-color:#FAFAFA;
+        padding:0px!important;
     }
     .main-image {
         width:50%
@@ -57,13 +60,7 @@
     .form input{
         padding-bottom:10px;
     }
-    .entry {
-        height:auto;
-        background-color:#fff;
-        margin-bottom:25px;
-        border-radius:5px;
-        padding:50px;
-    }
+
     .btn-file {
     position: relative;
     overflow: hidden;
@@ -85,5 +82,74 @@
 }
     .desc {
         overflow-y:auto;
+    }
+    
+    .section-1 {
+    
+    }
+    .container-main {
+           background-image: url("https://s3.amazonaws.com/jonas-personal-portfolio/background-02.png");
+         background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+        background-color:#fafafa;
+        height:100vh;
+        width:100vw;
+        margin:0px!important;
+        overflow-x:hidden;
+    }
+    
+    .row {
+        padding:75px;
+    }
+    @media all and (max-width: 500px)  {
+        h1.main-h1 {
+            font-size:24px;
+        
+        }
+    }
+    @media only screen and (min-width: 600px)  {
+        .query-form {
+            background-color:#fff;
+            padding:25px;
+            border-radius:5px;
+              box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            max-width:350px;
+            margin-left:75px;
+        }
+        .entry {
+            height:auto;
+            background-color:#fff;
+            margin-bottom:25px;
+            border-radius:5px;
+            padding:50px;
+            margin:10px;
+        }
+    }
+    .upload-photo {
+        display:none;
+    }
+    
+    .form-control {
+        height:50px;
+  
+    }
+    
+    .btn {
+        height:50px;
+        line-height:37.5px;
+        font-weight:700;
+        font-size:18px;
+    }
+    .main-h1 {
+        line-height:1.5;
+        font-weight:700;
+        font-size:42px;
+        padding-left:0px;
+    }
+    
+    .tutorial {
+        font-size:10px;
+        font-style:italic;
     }
 </style>
