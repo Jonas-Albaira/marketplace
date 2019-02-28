@@ -1,155 +1,186 @@
-<title>Market Place Review</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="./stylesheets/style.css">
-<link rel="stylesheet" href="https://use.typekit.net/tms7fjm.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.typekit.net/ggt4lqm.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+</head>
+<body>
 
-<style>
-    html {
-        font-family: "source-sans-pro";
-        font-weight: 400;
-        font-style: normal;
-    }
-    h1,h2,h3,h4,h5 {
-        color:#031b4e;
-    }
-    body * {
-        font-family: "source-sans-pro";
-        font-weight: 400;
-        font-style: normal;
-    }
-    body {
-        background-color:#FAFAFA;
-        padding:0px!important;
-    }
-    .main-image {
-        width:50%
-       
-    }
-    .review-title {
-        font-size:20px;
-        font-weight:700;
-        font-style:italic;
-    }
-    .product-title {
-        font-size:18px;
-        font-weight:700;
-    }
-    .review-text {
-        font-size:14px;
-        line-height:1.5em;
-    }
-    .submitButton {
-        padding:10px;
-        background-color:#0085CA;
-        width:75px;
-        text-align:center;
-        color:#fff;
-    }
-    .submitButton:hover {
-        background-color:#000;
-    }
-    .form {
-        background-color:#fff;
-        padding:20px!important;
-        margin-bottom:30px;
-    }
-    .form input{
-        padding-bottom:10px;
-    }
 
-    .btn-file {
-    position: relative;
-    overflow: hidden;
-}
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
-    .desc {
-        overflow-y:auto;
-    }
+<div class='container-main'>
+    <div class="row" style="padding-bottom:25px;padding-top:25px;">
+        <div class="col-sm-6" >
+            <h1 class="main-h1">Imbue Spark is a cloud-based Product Review Platform</h1>
+        </div>
+    </div>
+<div class="row section-1" style="padding-top:0px;">
+    <div class="col-sm-4 query-form">
+        <h2 style="text-align:center;font-weight:700;">Search Product</h2>
+        <br>
+        <input class="form-control" id="enter" name="enter" type="email" placeholder="Enter E-mail Address" value="">
+        <br>
+        <input class="form-control" type="text" id="txtQuery" name="txtQuery" placeholder="Enter Product Name"value="">
+        <br>
+        <a href="javascript:getQuery();" class="btn btn-primary" style="width:100%;background-color:#0CB863;border:0px;">Search Product</a>
+        <br>
+        <br>
+        <a href="/" id="querySubmit" class="btn btn-primary" style="width:100%;">Submit</a>
+        <br>
+        <br>
+        <p class="tutorial">To search a product review, type in email address, and product name then press "Search Product". If successful, press Submit</p>
+    </div>
+    <div class="col-sm-4" >
+
+    </div>
+    <div class="col-sm-4">
+    </div>    
+</div>  
+<form method="POST" action="/save-details" class='md-form'>
+    <div class="row">
+        <div class="col-sm-4 upload-photo">
+            <h2 style="text-align:center;">Upload File</h2>
+            <!--<label for="file-input">Example file input</label>-->
+            <label class="btn btn-default btn-file">
+           
+            Browse
+            
+            <input type="file" id="file-input" style="display: none;" multiple>
+            </label>
+            <br>           
+            <input type="hidden" id="upload" name="upload" value="/">
+            <br>
+            <input class="form-control" id="enter" name="enter" type="email" placeholder="Enter E-mail Address" value="">
+            <br>
+            <input type="submit" value="Submit" class="btn btn-primary" style="width:100%;">
+        </div>
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
     
-    .section-1 {
-    
-    }
-    .container-main {
-           background-image: url("https://s3.amazonaws.com/jonas-personal-portfolio/background-02.png");
-         background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-        background-color:#fafafa;
-        height:100vh;
-        width:100vw;
-        margin:0px!important;
-        overflow-x:hidden;
-    }
-    
-    .row {
-        padding:75px;
-    }
-    @media all and (max-width: 500px)  {
-        h1.main-h1 {
-            font-size:24px;
+</form>
+    </div> 
         
-        }
-    }
-    @media only screen and (min-width: 600px)  {
-        .query-form {
-            background-color:#fff;
-            padding:25px;
-            border-radius:5px;
-              box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-            max-width:350px;
-            margin-left:75px;
-        }
-        .entry {
-            height:auto;
-            background-color:#fff;
-            margin-bottom:25px;
-            border-radius:5px;
-            padding:50px;
-            margin:10px;
-        }
-    }
-    .upload-photo {
-        display:none;
-    }
+        
+        <% if (output) { %>
+        <!-- '<script>document.getElementById('enter').innerHTML;</script>' -->
+        <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                
+               
+            </div> 
+            <div class="col-sm-4">
+            </div>
+        </div>
+    <div class="row entry">
+        <div class="col-sm-4 ">
+            
+            <p class="search-heading">You searched for: <%=(searchQuery) ? searchQuery : ''  %></p>
+            <img class="main-image" src="<%= postBody %>"/>
+            </div>
+            <div class="col-sm-4 ">
+                <h5>Showing total results: <%= (output.totalResults) ? output.totalResults : '' %></h5>
+            </div>
+            <div class="col-sm-4">
+                 
+            </div>
+    </div>
+     <% for (var a in output.reviews)  { %> 
+        <div class="row ">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2 entry">
+                <img style="width:100%;" src=" <%= (output.reviews[a].item.main_image) ? output.reviews[a].item.main_image : '' %>" class="img-fluid"/>
+                <p class="product-title"><%= (output.reviews[a].item.title) ? output.reviews[a].item.title : '' %></p>
+            </div>
+             <div class="col-sm-6 desc entry">                 
+                
+                <p class="review-title">"  <%= (output.reviews[a].title) ? output.reviews[a].title : '' %> "</p>
+                <p >&#45; <%= (output.reviews[a].author) ? output.reviews[a].author : '' %></p>
+                <p> Rating: &nbsp; <%= (output.reviews[a].rating) ? output.reviews[a].rating : '' %>  </p>
+                <h5> <a href="https://<%= (output.reviews[a].item.site) ? output.reviews[a].item.site : '' %>"> Visit Site </a></h5>
+                 <p class="review-text"><%= (output.reviews[a].text) ? output.reviews[a].text : '' %></p>
+                <hr>
+                <a href="/email?img=<%= (output.reviews[a].item.main_image) ? output.reviews[a].item.main_image : '' %>&title=<%= (output.reviews[a].item.title) ? output.reviews[a].item.title : '' %>&txt=<%= (output.reviews[a].text) ? output.reviews[a].text : '' %>&address=<%=(email) ? email : ''  %>">Email Results</a>
+            </div>
+            
+        </div>
+     <% } %>
+       <% } %>
     
-    .form-control {
-        height:50px;
-  
-    }
-    
-    .btn {
-        height:50px;
-        line-height:37.5px;
-        font-weight:700;
-        font-size:18px;
-    }
-    .main-h1 {
-        line-height:1.5;
-        font-weight:700;
-        font-size:42px;
-        padding-left:0px;
-    }
-    
-    .tutorial {
-        font-size:10px;
-        font-style:italic;
-    }
-</style>
+    <script>
+        
+        (() => {
+          document.getElementById("file-input").onchange = () => {
+            var files = document.getElementById('file-input').files;
+            var file = files[0];
+            if(file == null){
+              return alert('No file selected.');
+            }
+            getSignedRequest(file);
+          };
+        })();
+            
+        function getSignedRequest(file){
+          var xhr = new XMLHttpRequest();
+          xhr.open('GET', `/sign-s3?file-name=${file.name}&file-type=${file.type}`);
+
+          xhr.onreadystatechange = () => {
+            if(xhr.readyState === 4){
+              if(xhr.status === 200){
+                var response = JSON.parse(xhr.responseText);
+
+                uploadFile(file, response.signedRequest, response.url);
+              }
+              else{
+                alert('Could not get signed URL.');
+              }
+            }
+          };
+          xhr.send();
+        }
+            
+        function uploadFile(file, signedRequest, url){
+
+          var xhr = new XMLHttpRequest();
+          xhr.open('PUT', signedRequest);
+          xhr.onreadystatechange = () => {
+            if(xhr.readyState === 4){
+              if(xhr.status === 200){
+                document.getElementById('upload').value = url;
+              }
+              else{
+                alert('Could not upload file.');
+                alert(url);
+              }
+            }
+          }; 
+
+          xhr.send(file);
+
+        }
+        
+        function getEmail() {
+            var email = document.getElementById('enter').value;
+            
+            return(email);
+        }
+        function getQuery() {
+            var query = document.getElementById('txtQuery').value;
+            enter
+            var emailSearch = document.getElementById('enter').value;
+            var full="/query?txtQuery=" + query +"&email="+emailSearch;
+            alert(full);
+            var querySubmit = document.getElementById('querySubmit');
+            querySubmit.setAttribute("href", full);
+            
+            //window.open('/email', '_self');
+           
+            
+        }
+    </script>
+    </body>
+<% include partials/script %>
+</html>
