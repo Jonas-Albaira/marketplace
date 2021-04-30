@@ -75,16 +75,15 @@
             </div>
         </div>
     <div class="row entry">
-        <div class="col-sm-4 ">
-            
+     <div class="col-sm-3 ">     
             <p class="search-heading">You searched for: <%=(searchQuery) ? searchQuery : ''  %></p>
             <img class="main-image" src="<%= postBody %>"/>
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-6 ">
                 <h5>Showing total results: <%= (output.totalResults) ? output.totalResults : '' %></h5>
             </div>
-            <div class="col-sm-4">
-                 
+            <div class="col-sm-3">
+             
             </div>
     </div>
      <% for (var a in output.reviews)  { %> 
