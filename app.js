@@ -107,6 +107,7 @@ app.post('/save-details', (req, res)  => {
                 })
                .catch(function (err) {
                     // Crawling failed...
+                    console.log("no products found");
                 });
          
         return
