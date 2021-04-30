@@ -12,7 +12,7 @@ var queryRouter = require('./routes/query');
 var emailRouter = require('./routes/email');
 //var {callCloudVision} = require('./routes/save-details');
 const webhoseio = require('webhoseio');
-const clientReview = webhoseio.config({token: '770d0e2f-2280-409f-8ea8-d3b5e7508745'});
+const clientReview = webhoseio.config({token: '4dcba098-9268-4d2f-96d4-d7876a5bbb0f'});
 
 var visionAPICall = require('./routes/callVision');
 
