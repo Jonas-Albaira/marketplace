@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var url = require('url');
 const webhoseio = require('webhoseio');
-const clientReview = webhoseio.config({token: '770d0e2f-2280-409f-8ea8-d3b5e7508745'});
+const clientReview = webhoseio.config({token: 'd1a458ab-bf3c-406a-b09b-b6ab8aa6655b'});
 
 
 router.get('/query', function(req, res, next) {
