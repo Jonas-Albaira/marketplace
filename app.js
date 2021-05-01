@@ -102,7 +102,8 @@ app.post('/save-details', (req, res)  => {
             clientReview.query('reviewFilter', query_params)  
         
             .then(output => {
-               
+                console.log(output['posts'][0]['text']); // Print the text of the first post
+                console.log(output['posts'][0]['published']); // Print the text of the first post publication date
                 res.render('index.ejs',{output:output,postBody:postBody,searchQuery:finalQuery[0],email:postEmail});
                 })
                .catch(function (err) {
