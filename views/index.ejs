@@ -76,7 +76,7 @@
                 <p >&#45; <%= (output.reviews[a].author) ? output.reviews[a].author : '' %></p>
                 <p> Rating: &nbsp; <%= (output.reviews[a].rating) ? output.reviews[a].rating : '' %>  </p>
                 <h5> <a href="https://<%= (output.reviews[a].item.site) ? output.reviews[a].item.site : '' %>"> Visit Site </a></h5>
-                 <p class="review-text"><%= (output['posts'][a]['text']) ? output['posts'][0]['text'] : '' %></p>
+                 <p class="review-text"><%= (output.reviews[a].text) ? output['posts'][0]['text'] : '' %></p>
                 <hr>
                 <a href="/email?img=<%= (output.reviews[a].item.main_image) ? output.reviews[a].item.main_image : '' %>&title=<%= (output.reviews[a].item.title) ? output.reviews[a].item.title : '' %>&txt=<%= (output.reviews[a].text) ? output.reviews[a].text : '' %>&address=<%=(email) ? email : ''  %>">Email Results</a>
             </div>
