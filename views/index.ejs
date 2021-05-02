@@ -19,10 +19,10 @@
         </div>
     </div>
 <div class="row section-1" style="padding-top:0px;">
-    <div class="col-sm-4" >
+    <div class="col-sm-2" >
 
     </div>
-    <div class="col-sm-4 query-form">
+    <div class="col-sm-8 query-form">
         <h2 style="text-align:center;font-weight:700;">Search Product</h2>
         <br>
         <input class="form-control" id="enter" name="enter" type="email" placeholder="Enter E-mail Address" value="">
@@ -38,7 +38,7 @@
         <p class="tutorial">To search a product review, type in email address, and product name then press "Search Product". If successful, press Submit</p>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-2">
     </div>    
 </div>  
 
@@ -145,10 +145,10 @@
             
             var emailSearch = document.getElementById('enter').value;
             var full="/query?txtQuery=" + query +"&email="+emailSearch;
-            alert(full);
+            //alert(full);
             var querySubmit = document.getElementById('querySubmit');
             querySubmit.setAttribute("href", full);
-            
+            window.location.href = full;
             //window.open('/email', '_self');
            
             
